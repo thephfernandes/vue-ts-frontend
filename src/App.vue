@@ -1,13 +1,29 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <AppNav/>
     <router-view/>
+    <AppFooter/>
   </div>
 </template>
 
+<script lang="ts">
+import 'reflect-metadata'
+import {Component, Vue} from 'vue-property-decorator'
+import AppNav from '@/components/AppNav.vue'
+import AppFooter from '@/components/AppFooter.vue'
+import Home from '@/views/Home.vue'
+
+@Component({
+  components: {
+    AppNav,
+    AppFooter,
+    Home
+  }
+})
+export default class App extends Vue{
+  
+}
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

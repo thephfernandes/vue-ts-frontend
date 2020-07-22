@@ -5,17 +5,28 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "mocha"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.157",
+    "axios": "^0.19.2",
+    "buefy": "^0.8.20",
+    "bulma": "^0.9.0",
     "core-js": "^3.6.5",
+    "lodash": "^4.17.19",
+    "reflect-metadata": "^0.1.13",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
-    "vue-property-decorator": "^8.4.2",
-    "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
+    "vue-property-decorator": "^8.5.1",
+    "vue-router": "^3.0.1",
+    "vue-router-sitemap": "0.0.4",
+    "vuex": "^3.4.0",
+    "vuex-module-decorators": "^0.17.0"
   },
   "devDependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "@types/node": "^14.0.24",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.4.0",
@@ -25,11 +36,17 @@
     "@vue/cli-plugin-vuex": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
     "@vue/eslint-config-typescript": "^5.0.2",
+    "bootstrap": "^4.3.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "jquery": "^1.9.1",
+    "mutationobserver-shim": "^0.3.3",
+    "popper.js": "^1.16.0",
+    "portal-vue": "^2.1.6",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",
+    "vue-cli-plugin-bootstrap-vue": "~0.6.0",
     "vue-template-compiler": "^2.6.11"
   }
 }
